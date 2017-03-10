@@ -50,6 +50,13 @@ def remove_pet_by_name(pet_shop, pet_name)
   end
 end
 
+def add_pet_to_stock(pet_shop, new_pet)
+    pets = pet_shop[:pets]  
+    return pets.push(new_pet)
+end
+
+
+
 
 
   #create an empty array for results
