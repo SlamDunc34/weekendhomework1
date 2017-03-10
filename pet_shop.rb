@@ -59,14 +59,6 @@ def customer_pet_count(customers)
     return customers[:pets].length
 end
 
-
-
-
-
-
-  #create an empty array for results
-  #get the pets from the pet shop
-  #in a for loop, iterate through all the pets, if its breed is the same as the input breed, push it into the array
-  
-
-
+def add_pet_to_customer(customer, new_pet)
+  customer[:pets].push(new_pet)
+end
