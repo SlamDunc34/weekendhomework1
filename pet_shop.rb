@@ -19,7 +19,23 @@ def increase_pets_sold(pets, sold)
 end
 
 def stock_count(pets)
-  return pets[:pets][:name].count
+  return pets[:pets].count
 end
+
+def pets_by_breed(pet_shop, breed)
+  breed_array = []
+  for pets in pet_shop[:pets]
+    if pets[:breed] == breed
+      breed_array.push(pets)
+    end
+  end
+  return breed_array
+end
+
+
+  #create an empty array for results
+  #get the pets from the pet shop
+  #in a for loop, iterate through all the pets, if its breed is the same as the input breed, push it into the array
+  
 
 
